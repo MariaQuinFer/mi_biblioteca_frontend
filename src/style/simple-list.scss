@@ -1,0 +1,87 @@
+.simple-table {
+  width: 95%;
+  min-width: 50px;
+  margin: 25px; 
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+  border: none;
+  border-collapse: collapse;
+  th {
+    color:$offwhite;
+    padding: 15px 0px 15px 0px;
+    font-size: 18px;
+    border-bottom: solid 1px black;
+    text-align: start;
+  }
+  
+  td {
+    color: $offwhite;
+    padding: 15px 0px 15px 0px;
+    border-bottom: solid 1px $deepsmoke;
+    font-size: 12px;
+    text-align: start;
+
+    .book-cover {
+      width: 45px;
+      height: 70px;
+    }
+  }
+  
+}
+
+
+.actions{
+  display:flex;
+  flex-direction: column;
+  .action-icon {
+    color: $offwhite;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    &:hover{
+      color:$wine;
+    }
+  }
+}
+
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-success{
+  @include base-btn();
+    background-color: $green;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+
+.btn-warning{
+  @include base-btn();
+    background-color: $wine;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+  }
+  
+
+
+@media (max-width: 988px){
+  
+  .inputBuscar{
+    width: 100% !important;
+  }
+
+  .App{
+    padding: 40px 5px;
+  }
+
+  
+  .containerInput{
+  padding-bottom: 15px;
+  }
+}

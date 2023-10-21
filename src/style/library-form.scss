@@ -1,0 +1,33 @@
+.library-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .form-wrapper{
+    display: flex;
+    flex-direction: column;
+    @include input-element();
+    
+    button {
+      @include base-btn();
+    }
+  }
+
+  .book-form-wrapper{
+    width: 90%;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+
+    @include input-element();
+    
+    button {
+      @include base-btn();
+    }
+
+
+  }
+}

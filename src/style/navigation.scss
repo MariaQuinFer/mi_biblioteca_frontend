@@ -1,0 +1,146 @@
+.nav-wrapper-menu {
+  width: 100%;
+  height: 150px;
+  background-color: $darksmoke;
+  //background-color: #e8ae4a;
+  //background-color: #343a40;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.55);
+
+  .nav-left-side{
+    display: flex;
+    align-items: flex-end;
+  
+
+    .nav-logo {  
+      background-image: url(../../static/assets/images/fondo_libros.png);
+      background-position: 100% 100%;
+      background-size: cover;
+      height: 150px;
+      width: 200px;
+    }
+    
+    .nav-center-side {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .nav-name {
+        padding: 10px 10px 60px 10px;
+
+        a {
+          text-decoration: none;
+          color: $offwhite;
+          font-family: 'Oswald', sans-serif;
+          font-size: 2em;
+          text-decoration: none;
+        
+        }
+      }
+      
+      .link-wrapper {
+        display: flex;
+
+      }
+    }  
+  }
+  .nav-link-wrapper {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s ease-in-out;
+
+    a {
+      color: $offwhite;
+      text-decoration: none;
+      padding: 10px 10px 0 10px;
+
+      &:hover {
+        color: $offgrey;
+
+      }
+    }
+    &:hover {
+      border-bottom: 1px solid $offgrey;
+    }
+
+    .nav-link-active {
+      // border-bottom: 1px solid $offgrey;
+      font-size: 1.1em;
+      color: $mustard; 
+    }
+  }
+
+  .nav-right-side {
+    .log-out{
+      color: $offwhite;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        color: $wine;
+      }
+    }
+  }
+// volver a mirar login una vez que tenga page
+   
+  
+}
+
+.nav-wrapper-submenu {
+  width: 100%;
+  //background-color: #e8ae4a;
+  //background-color: #343a40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.55);
+
+  p {
+    padding: 0px 70px 0px 70px;
+    color: $mustard;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+  .nav-link-wrapper {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s ease-in-out;
+
+    a {
+      color: $darksmoke;
+      text-decoration: none;
+      padding: 10px 10px 0 10px;
+
+      &:hover {
+        color: $offgrey;
+
+      }
+    }
+    &:hover {
+      border-bottom: 1px solid $offgrey;
+    }
+
+    .nav-link-active {
+      // border-bottom: 1px solid $offgrey;
+      font-size: 1.1em;
+      color: $mustard; 
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+

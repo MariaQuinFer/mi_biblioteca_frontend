@@ -1,0 +1,12 @@
+.library-manager-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .upper-side {
+    background-color: $smoke;
+  }
+
+  .lower-side {
+    background-color: $darksmoke;
+  }
+}

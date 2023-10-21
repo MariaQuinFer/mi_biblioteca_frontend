@@ -1,0 +1,14 @@
+.auth-page-wrapper{
+  margin:100px;
+
+  .log-in-wrapper{
+    border: 2px solid $darksmoke;
+    background-color: $darksmoke;
+    color: $offwhite;
+    .log-in {
+      display: flex;
+      flex-direction: column;
+      @include input-element
+    }
+  }
+}

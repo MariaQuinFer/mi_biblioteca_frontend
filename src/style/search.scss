@@ -1,0 +1,7 @@
+.search-bar-wrapper {
+  display: flex;
+  @include input-element();
+  button {
+    @include base-btn();
+  }
+}

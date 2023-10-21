@@ -1,0 +1,48 @@
+.library-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+
+  .library-item-wrapper {
+    position: relative;
+
+    .library-img-background {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 375px;
+      width: 235px;
+    }
+
+    .img-text-wrapper {
+      position: absolute;
+      top:0;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      padding-left: 60px;
+      padding-right: 60px;
+
+      .subtitle {
+        transition: 1s ease-in-out;
+        color: transparent;
+      }
+      a {
+        text-decoration: none;
+
+      }
+
+    }
+
+    .img-text-wrapper:hover .subtitle {
+      color: $mustard;
+      font-weight: 500;
+
+    }
+  }
+}
+.image-blur {
+  transition: 1s;
+  filter:brightness(15%)
+}
